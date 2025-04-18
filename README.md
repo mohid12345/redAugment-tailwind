@@ -52,3 +52,11 @@ export default tseslint.config({
   },
 })
 ```
+
+
+Notice: 
+For starting application, 
+- if no  node_modules , initilize it with 'npm i'
+- to start the app, npm run dev.
+- click on localhost
+- no env is needed
