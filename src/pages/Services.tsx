@@ -12,8 +12,8 @@ function Services() {
             <Header />
             {/* Your app content */}
             <div className="relative z-10 container mx-auto py-8 lg:px-4">
-                <div className=" text-white h-[30rem]  w-full flex flex-col justify-center items-center">
-                    <div className="text-6xl">Explore Our Services</div>
+                <div className=" text-white  w-full flex flex-col justify-center items-center">
+                    <div className=" text-lg md:text-4xl lg:text-6xl">Explore Our Services</div>
 
                     <form className="rounded w-full max-w-xl  p-2 mt-5">
                         <label htmlFor="search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
@@ -33,7 +33,7 @@ function Services() {
                         </div>
                     </form>
                     <div className="flex flex-wrap justify-center gap-4 w-3/4 p-4">
-                        <div className="px-6 py-3 rounded-full hover:bg-white/30 border border-white shadow-md backdrop-blur-md text-sm font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                        <div className="px-6 py-3 rounded-full hover:bg-white/30 border border-white shadow-md backdrop-blur-md text-sm font-medium text-gray-900 dark:text-white ">
                             Artificial Intelligence & Advanced Data Solutions
                         </div>
                         <div className="px-6 py-3 rounded-full hover:bg-white/30 border border-white shadow-md backdrop-blur-md text-sm text-gray-800 dark:text-white">
