@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../components/Header";
 import FloatingOrbs from "../components/FloatingOrbs";
 import { MdOutlineArrowCircleRight } from "react-icons/md";
@@ -54,27 +53,27 @@ function Services() {
 
                 <div className="space-y-6 mx-24">
                     <div className="flex gap-6">
-                    <div className="flex-1 h-72 relative overflow-hidden rounded-xl p-6 text-white flex flex-col justify-end group bg-transparent">
-  {/* Background layer with gradient + shapes that zoom on hover */}
-  <div className="absolute inset-0 z-0 transition-transform duration-700 ease-out scale-100 group-hover:scale-110">
-    {/* Gradient base */}
-    <div className="absolute inset-0 bg-gradient-to-br from-violet-500/40 via-black/60 to-blue-600/40"></div>
+                        <div className="flex-1 h-72 relative overflow-hidden rounded-xl p-6 text-white flex flex-col justify-end group bg-transparent">
+                            {/* Background layer with gradient + shapes that zoom on hover */}
+                            <div className="absolute inset-0 z-0 transition-transform duration-700 ease-out scale-100 group-hover:scale-110">
+                                {/* Gradient base */}
+                                <div className="absolute inset-0 bg-gradient-to-br from-violet-500/40 via-black/60 to-blue-600/40"></div>
 
-    {/* Abstract blurred shapes */}
-    <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-400/30 rounded-full filter blur-2xl"></div>
-    <div className="absolute top-0 right-0 w-28 h-28 bg-violet-300/30 rounded-full filter blur-2xl"></div>
-    <div className="absolute bottom-0 left-1/2 w-48 h-48 bg-black/30 rounded-full filter blur-3xl"></div>
-  </div>
+                                {/* Abstract blurred shapes */}
+                                <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-400/30 rounded-full filter blur-2xl"></div>
+                                <div className="absolute top-0 right-0 w-28 h-28 bg-violet-300/30 rounded-full filter blur-2xl"></div>
+                                <div className="absolute bottom-0 left-1/2 w-48 h-48 bg-black/30 rounded-full filter blur-3xl"></div>
+                            </div>
 
-  {/* Foreground text content */}
-  <div className="relative z-10">
-    <h2 className="text-xl font-semibold">AI Strategy & Advisory</h2>
-    <p className="text-sm opacity-80">
-      is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s, w
-    </p>
-  </div>
-</div>
-
+                            {/* Foreground text content */}
+                            <div className="relative z-10">
+                                <h2 className="text-xl font-semibold">AI Strategy & Advisory</h2>
+                                <p className="text-sm opacity-80">
+                                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                    1500s, w
+                                </p>
+                            </div>
+                        </div>
 
                         <div
                             className="w-1/3 h-72 bg-cover bg-center rounded-xl p-6 text-white flex flex-col justify-end"

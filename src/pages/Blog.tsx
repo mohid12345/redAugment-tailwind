@@ -1,11 +1,10 @@
-import React, {useState} from "react";
+import { useState } from "react";
 import Header from "../components/Header";
-import FloatingOrbs from "../components/FloatingOrbs";
 import { MdOutlineArrowCircleRight } from "react-icons/md";
 import Footer from "../components/Footer";
 
 function Blog() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
         <div className="relative min-h-screen">
             <Header />
@@ -59,60 +58,55 @@ function Blog() {
                     <div className="lg:flex flex-row">
                         <div className="lg:w-[10rem] gap-[1px] lg:border border-[#333]"></div>
 
-
-
                         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[1px] border border-[#333]">
-      {[...Array(15)].map((_, i) => {
-        const isHovered = hoveredIndex === i;
+                            {[...Array(15)].map((_, i) => {
+                                const isHovered = hoveredIndex === i;
 
-        return (
-          <div
-            key={i}
-            onMouseEnter={() => setHoveredIndex(i)}
-            onMouseLeave={() => setHoveredIndex(null)}
-            className="aspect-square relative overflow-hidden border border-[#222] bg-[#111] transition-all duration-300"
-          >
-            {/* Hover Gradient Overlay */}
-            <div
-              className={`absolute inset-0 transition-all duration-300 ${
-                isHovered
-                  ? "bg-gradient-to-br from-[#ff4d4d] via-[#b946fc] to-[#ff9a9e] opacity-100"
-                  : "opacity-0"
-              }`}
-            ></div>
+                                return (
+                                    <div
+                                        key={i}
+                                        onMouseEnter={() => setHoveredIndex(i)}
+                                        onMouseLeave={() => setHoveredIndex(null)}
+                                        className="aspect-square relative overflow-hidden border border-[#222] bg-[#111] transition-all duration-300"
+                                    >
+                                        {/* Hover Gradient Overlay */}
+                                        <div
+                                            className={`absolute inset-0 transition-all duration-300 ${
+                                                isHovered
+                                                    ? "bg-gradient-to-br from-[#ff4d4d] via-[#b946fc] to-[#ff9a9e] opacity-100"
+                                                    : "opacity-0"
+                                            }`}
+                                        ></div>
 
-            {/* Card Content */}
-            <div className="relative z-10 flex flex-col justify-between h-full p-4">
-              <div className="flex justify-between items-start">
-                <img src="/optionsLogo.png" alt="icon" className="w-10 h-10" />
-                <span className="text-sm text-white">12/08/2024</span>
-              </div>
+                                        {/* Card Content */}
+                                        <div className="relative z-10 flex flex-col justify-between h-full p-4">
+                                            <div className="flex justify-between items-start">
+                                                <img src="/optionsLogo.png" alt="icon" className="w-10 h-10" />
+                                                <span className="text-sm text-white">12/08/2024</span>
+                                            </div>
 
-              {/* Bottom Content with Motion */}
-              <div
-                className={`mt-auto transition-all duration-300 ${
-                  isHovered ? "translate-y-[-10px]" : ""
-                }`}
-              >
-                <p className="text-[10px] text-yellow-400 font-medium">TECHNOLOGY</p>
-                <h3 className="text-base font-semibold leading-snug text-white">
-                  Architectural Design
-                </h3>
+                                            {/* Bottom Content with Motion */}
+                                            <div
+                                                className={`mt-auto transition-all duration-300 ${
+                                                    isHovered ? "translate-y-[-10px]" : ""
+                                                }`}
+                                            >
+                                                <p className="text-[10px] text-yellow-400 font-medium">TECHNOLOGY</p>
+                                                <h3 className="text-base font-semibold leading-snug text-white">
+                                                    Architectural Design
+                                                </h3>
 
-                {isHovered && (
-                  <button className="text-sm text-white mt-2 underline underline-offset-2">
-                    Read More
-                  </button>
-                )}
-              </div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-
-
-
+                                                {isHovered && (
+                                                    <button className="text-sm text-white mt-2 underline underline-offset-2">
+                                                        Read More
+                                                    </button>
+                                                )}
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
             </div>

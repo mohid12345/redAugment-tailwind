@@ -1,5 +1,3 @@
-import React from "react";
-
 function Footer() {
     return (
         <div className="bg-[radial-gradient(circle,_rgba(197,144,67,0.3)_0%,_#000000_80%)] text-white py-12 px-6 md:px-24 mt-16">
@@ -14,8 +12,7 @@ function Footer() {
                         <h2 className="text-xl font-semibold">Red Augment</h2>
                     </div>
                     <p className="text-sm text-gray-300">
-                         consectetur. Eu eget sagittis mi odio. Eget non ultrices interdum nisl. A
-                        euismod nunc proin sed.
+                        consectetur. Eu eget sagittis mi odio. Eget non ultrices interdum nisl. A euismod nunc proin sed.
                     </p>
                 </div>
 
@@ -60,7 +57,7 @@ function Footer() {
                 </div>
             </div>
 
-{/* bottom div */}
+            {/* bottom div */}
             <div className="mt-10 text-center text-gray-500 text-sm">© 2025 - redaugment</div>
         </div>
     );

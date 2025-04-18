@@ -1,7 +1,4 @@
-import React, { useState } from "react";
 import Header from "../components/Header";
-import FloatingOrbs from "../components/FloatingOrbs";
-import { MdOutlineArrowCircleRight } from "react-icons/md";
 import Footer from "../components/Footer";
 
 type Plan = {
@@ -58,7 +55,6 @@ const plans: Plan[] = [
 ];
 
 function Pricing() {
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
         <div className="relative min-h-screen">
             <Header />
